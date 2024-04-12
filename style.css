@@ -702,9 +702,20 @@ Utiliza las referencias de los breakpoints @media abajo */
     flex-direction: column-reverse;
 }
 /*Titulo*/
-
+.title__bio{
+    max-width: 100%;
+}
 /*Sección sobre mi*/
 
+/* redes */
+.title__network{
+    padding-left: 2px;
+    gap: 10px;
+    /* flex-direction: column; */
+}
+.nav-item{
+    font-size: 12px;
+}
 /*Skills*/
 .skills{
     width: 100%;
@@ -719,11 +730,11 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 /*Experiencia Profesional*/
 .experience__box{
-    width: 95%;
+    width: 90%;
 }
  /*Contacto*/
  section.formcontato{
-    width: 95%;
+    width: 90%;
 }
 /*proyectos*/
 .experience__img{
