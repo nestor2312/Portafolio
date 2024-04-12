@@ -703,7 +703,13 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 /*Titulo*/
 .title__bio{
-    max-width: 100%;
+   font-size: 23px;
+}
+.title__container{
+    padding-left: 8px;
+}
+.title__subsection{
+    font-size: 18px;
 }
 /*Sección sobre mi*/
 
