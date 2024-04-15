@@ -7,10 +7,9 @@
    --color: linear-gradient(180deg, #4ee89ea4 20%, #09537e 100%);
    --color3: #02223f;
    --texto-titulos: "Rampart One", serif;
-
    --texto-normal: "poppins", sans-serif;
-
    --texto-principal:  "Wallpoet", sans-serif;
+   --texto-menu:  "Fira Code", monospace;
 
 }
 
@@ -28,7 +27,7 @@ ol, ul,li {
 .nav-item{
     text-decoration: none;
     color: var(--texto);
-    font-family: var(--texto-titulos);
+    font-family: var(--texto-menu);
     transition: 0.2s;
 }
 .nav-item:hover{
@@ -181,7 +180,8 @@ section.about{
 
 .skills__box .skills__name{
     color: var(--texto);
-    font-family: var(--texto-titulos);
+    font-family: var(--texto-menu);
+    font-weight: bold;
     text-transform: uppercase;
 }
 .skills__box ul{
@@ -265,58 +265,29 @@ section.about{
 .skills__box:nth-child(6):hover i {
     color: #7ad9f9;
 }
-/*Sección Hobbies*/
 
-.hobbies{
-    width: 90%;
-    margin: 60px auto;
-}
-
-.hobbies__title{
-    background: var(--color2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--texto-titulos);
-}
-.hobbies__line{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.hobbies__box{
-    width: 150px;
-    height: 150px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(30px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.hobbies__box ul{
-    gap: 15px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    height: 100%;
-}
-.hobbies__box .hobbies__name{
-    color: var(--texto);
-    font-family: var(--texto-titulos);
-}
-
-.hobbies__box:hover {
+.skills__box:nth-child(7):hover {
     border: 2px solid #fcfcfc;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.43);
+}
+.skills__box:nth-child(7):hover .skills__name {
+    color: var(--texto);
+    font-family: var(--texto-principal);
+}
+.skills__box:nth-child(7):hover i {
+    color: #7ad9f9;
+}
+
+.skills__box:nth-child(8):hover {
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.43);
+}
+.skills__box:nth-child(8):hover .skills__name {
+    color: var(--texto);
+    font-family: var(--texto-principal);
+}
+.skills__box:nth-child(8):hover i {
+    color: #7ad9f9;
 }
 
 /* Experiencia Académica*/
@@ -601,6 +572,9 @@ section.footer{
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
+@media (max-width: 1024px) {
+
+}
 
 /*Tablet*/
 @media (max-width: 900px) {
@@ -637,16 +611,6 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 /*Hobbies*/
 
-.hobbies__box{
-    max-width: 130px;
-    max-height: 130px;
-    font-size: 12px;
-}
-/* .hobbies__title:hover{
-    font-family: var(--texto-principal);
-    font-size: 12px;
-    color: #000;
-} */
 
 /*Formación Académica*/
 .academic__courses__box{
@@ -717,7 +681,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 .title__network{
     padding-left: 2px;
     gap: 10px;
-    /* flex-direction: column; */
+     /* flex-direction: column; */
 }
 .nav-item{
     font-size: 12px;
@@ -726,10 +690,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 .skills{
     width: 100%;
 }
-/*Hobbies*/
-.Hobbies{
-    width: 100%;
-}
+
 /*Formación Académica*/
 .skills{
     width: 100%;
