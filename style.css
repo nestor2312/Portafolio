@@ -23,6 +23,11 @@ body {
 ol, ul,li {
     list-style: none;
 }
+
+.container{
+    display: none;
+}
+
 .nav-item{
     text-decoration: none;
     color: var(--texto);
@@ -113,10 +118,10 @@ section.title{
 }
 .title__profile{
     border-radius: 50%;
-    width: 100px;
-    height:  100px;
-    background: gainsboro;
-    border: 2px solid #02223f;
+    width: 200px;
+    height:  200px;
+   
+    border: 1px solid #02223f;
     order: 2;
 }
 .title__container {
@@ -576,17 +581,29 @@ Utiliza las referencias de los breakpoints @media abajo */
     .formcontato__contacto{
         width: 85%;
     }
+    .experience__img{
+        height: 250px;
     }
+   
+}
 
 @media (max-width: 1024px) {
 .formcontato__contacto{
     width: 85%;
 }
+
 }
 
 /*Tablet*/
 @media (max-width: 900px) {
 
+    .title__profile{
+      
+        width: 150px;
+        height:  150px;
+       
+      
+    }
 /* Menú */
 .menu__list{
     gap: 10px;
@@ -668,10 +685,93 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Mobile*/
 @media (max-width: 425px) {
 
+    .title__profile{
+        margin-top: 10px;
+        width: 90px;
+        height:  90px;
+    }
+
 /*Menu*/
+section.menu{
+    display: none;
+}
+.container{
+    display: flex;
+}
+
+.container {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh; 
+    overflow-x: hidden;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 83vh;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: -300px; /* Oculta el menú fuera del área visible */
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(180deg, #152039 0%, #00bf63cc 100%);
+    transition: left 0.3s ease; /* Añade una transición para el desplazamiento lateral */
+}
+
+.nav.active {
+    left: 0; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin:  5px auto 10px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+}
+li:hover {
+    border: 2px solid gainsboro;
+    background: rgba(220, 220, 220, 0.158);
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.close {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    font-size: 10px;
+    cursor: pointer;
+  
+    background-color: beige;
+    border-radius: 50%;
+}
+
+.close:hover {
+    border: 1px solid white;
+    background-color: red;
+    color: #999; 
+}
+
   
 .title__div{
     flex-direction: column-reverse;
+    height: 320px;
 }
 /*Titulo*/
 .title__bio{
