@@ -8,9 +8,8 @@
    --color3: #02223f;
    --texto-titulos: "Rampart One", serif;
    --texto-normal: "poppins", sans-serif;
-   --texto-principal:  "Wallpoet", sans-serif;
+   /* --texto-principal:  "Wallpoet", sans-serif; */
    --texto-menu:  "Fira Code", monospace;
-
 }
 
 body {
@@ -572,8 +571,17 @@ section.footer{
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
-@media (max-width: 1024px) {
 
+@media (max-width: 1440px) {
+    .formcontato__contacto{
+        width: 85%;
+    }
+    }
+
+@media (max-width: 1024px) {
+.formcontato__contacto{
+    width: 85%;
+}
 }
 
 /*Tablet*/
