@@ -683,7 +683,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media (max-width: 425px) {
+@media (max-width: 426px) {
 
     .title__profile{
         margin-top: 10px;
@@ -701,7 +701,7 @@ section.menu{
 
 .container {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 100vh; 
     overflow-x: hidden;
@@ -721,8 +721,8 @@ section.menu{
     left: -300px; /* Oculta el menú fuera del área visible */
     width: 300px;
     height: 100%;
-    background: linear-gradient(180deg, #152039 0%, #00bf63cc 100%);
-    transition: left 0.3s ease; /* Añade una transición para el desplazamiento lateral */
+    background: var(--cor-de-fundo);
+    transition: left 0.3s ease; 
 }
 
 .nav.active {
@@ -753,19 +753,18 @@ a {
 }
 .close {
     position: absolute;
-    top: 2px;
-    right: 3px;
-    font-size: 10px;
+    bottom: 90px;
+    right: 10px;
+    font-size: 30px;
     cursor: pointer;
-  
-    background-color: beige;
+    background-color: var(--texto);
     border-radius: 50%;
 }
 
 .close:hover {
     border: 1px solid white;
     background-color: red;
-    color: #999; 
+    color: var(--titulo); 
 }
 
   
