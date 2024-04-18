@@ -707,8 +707,8 @@ section.footer{
 
     .title__profile{
         margin-top: 10px;
-        width: 90px;
-        height:  90px;
+        width: 80px;
+        height:  80px;
     }
 
 
@@ -737,7 +737,7 @@ button{
     cursor: pointer;
     z-index: 2;
 } 
-.menu-toggle,.cerrar-menu{
+.menu-toggle,#close{
     display: block;
     position: fixed;
     cursor: pointer;
@@ -747,7 +747,7 @@ button{
 .nav {
     opacity: 0;
     visibility: hidden;
-    position: fixed;
+    display: flex;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -762,12 +762,13 @@ button{
     transition: 0.3s ease; 
 } 
 .nav.visible{
+    display: flex;
     transition: 0.3s ease; 
     opacity: 1;
     visibility: visible;
 }
 .nav-item:hover {
-        border-radius: 0px;
+    border-radius: 0px;
     padding: 0px;
     border:0px;
     color: var(--texto);
@@ -786,7 +787,7 @@ button{
 
 li.nv {
     margin:  5px auto 10px auto;
-    width: 80%;
+    width: 100%;
     padding: 10px;
     border-radius: 3px;
     border: 1px solid gainsboro;
@@ -796,10 +797,6 @@ li.nv:hover {
     background: rgba(220, 220, 220, 0.158);
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
 /* fin menu */
   
@@ -826,7 +823,7 @@ a {
      /* flex-direction: column; */
 }
 .nav-item{
-    font-size: 14px;
+    font-size: 12px;
 }
 /*Skills*/
 .skills{
