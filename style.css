@@ -818,8 +818,10 @@ li.nv:hover {
 
 /* redes */
 .title__network{
-    padding-left: 2px;
+    padding-left: 1px;
     gap: 10px;
+    max-height: 90px;
+    max-width: 350px;
      /* flex-direction: column; */
 }
 .nav-item{
