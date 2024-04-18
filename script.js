@@ -1,11 +1,11 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
-const closeBtn = document.querySelector('.close');
+const closeBtn = document.querySelector('#close');
 
 menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+    nav.classList.toggle('visible');
 });
 
 closeBtn.addEventListener('click', () => {
-    nav.classList.remove('active');
+    nav.classList.remove('visible');
 });

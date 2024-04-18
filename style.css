@@ -1,7 +1,7 @@
 :root{
    --cor-de-fundo: linear-gradient(180deg, #000428 0%, #004E92 100%);
    --texto: #ededed;
-   --titulo:#67fbb4d7;
+   --titulo:#1cb698;
    --titulo2: #1f4d90;
    --color2: linear-gradient(180deg, #4ee89ed7 30%, #02507d  100%);
    --color: linear-gradient(180deg, #4ee89ea4 20%, #09537e 100%);
@@ -11,7 +11,9 @@
    /* --texto-principal:  "Wallpoet", sans-serif; */
    --texto-menu:  "Fira Code", monospace;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     box-sizing: border-box;
     background: var(--cor-de-fundo) ;
@@ -24,9 +26,10 @@ ol, ul,li {
     list-style: none;
 }
 
-.container{
+.menu-toggle, .close{
     display: none;
 }
+
 
 .nav-item{
     text-decoration: none;
@@ -64,7 +67,7 @@ nav{
     justify-content: flex-end;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     font-family: var(--texto-titulos);
 }
 section.menu{
@@ -72,8 +75,8 @@ section.menu{
     color: var(--color);
 }
 
-.menu__list__item:nth-child(6){
-    padding-right: 20px;
+.menu__list__item:nth-child(4){
+    padding-right: 25px;
 }
 
 .title__network{
@@ -101,7 +104,7 @@ section.title{
 
 .title__bio{
     font-family: var(--texto-normal);
-    text-shadow: 2px 1px 0px  #4A5A70;
+    text-shadow: 2px 1px 0px  #454d59;
     color: var(--titulo) ;
     display: flex;
     align-items: center;
@@ -572,9 +575,11 @@ section.footer{
    font-family: var(--texto-titulo);
    flex-direction: column;
 }
+.menu-toggle,.cerrar-menu{
+    display: none;
+}
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
+/* @medias */
 
 
 @media (max-width: 1440px) {
@@ -691,57 +696,83 @@ Utiliza las referencias de los breakpoints @media abajo */
         height:  90px;
     }
 
-/*Menu*/
-section.menu{
+
+
+/* Menu */
+.menu__header{
     display: none;
 }
-.container{
-    display: flex;
-}
 
-.container {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    height: 100vh; 
-    overflow-x: hidden;
+
+.menu__list__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-toggle {
+  
+    display: flex;
     position: absolute;
-    top: 83vh;
-    right: 20px;
+    top: 5vh;
+    right: 10px;
     font-size: 24px;
     cursor: pointer;
+    z-index: 2;
+} 
+.menu-toggle,.cerrar-menu{
+    display: block;
+    position: fixed;
 }
+
 
 .nav {
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
     position: absolute;
     top: 0;
-    left: -300px; /* Oculta el menú fuera del área visible */
-    width: 300px;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     background: var(--cor-de-fundo);
+    padding: 15px;
+    z-index: 2;
     transition: left 0.3s ease; 
+} 
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-item:hover {
+        border-radius: 0px;
+    padding: 0px;
+    border:0px;
+    color: var(--texto);
+}
+.menu__list{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    font-family: var(--texto-titulos);
+}
+.menu__list__item:nth-child(4) {
+    padding-right: 10px;
 }
 
-.nav.active {
-    left: 0; 
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
+li.nv {
     margin:  5px auto 10px auto;
     width: 80%;
     padding: 10px;
     border-radius: 3px;
     border: 1px solid gainsboro;
 }
-li:hover {
+li.nv:hover {
     border: 2px solid gainsboro;
     background: rgba(220, 220, 220, 0.158);
 }
@@ -751,10 +782,9 @@ a {
     color: white;
     text-decoration: none;
 }
-.close {
-    position: absolute;
-    bottom: 90px;
-    right: 10px;
+/* .close {
+    background-color: red;
+    color: #e2e2e2;
     font-size: 30px;
     cursor: pointer;
     background-color: var(--texto);
@@ -765,8 +795,8 @@ a {
     border: 1px solid white;
     background-color: red;
     color: var(--titulo); 
-}
-
+} */
+/* fin menu */
   
 .title__div{
     flex-direction: column-reverse;
