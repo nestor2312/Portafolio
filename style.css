@@ -26,7 +26,7 @@ ol, ul,li {
     list-style: none;
 }
 
-.menu-toggle, .close{
+.menu-toggle, #close{
     display: none;
 }
 
@@ -297,6 +297,18 @@ section.about{
     color: #7ad9f9;
 }
 
+.skills__box:nth-child(9):hover {
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.43);
+}
+.skills__box:nth-child(9):hover .skills__name {
+    color: var(--texto);
+    font-family: var(--texto-principal);
+}
+.skills__box:nth-child(9):hover i {
+    color: #ffffff;
+}
+
 /* Experiencia Académica*/
 
 
@@ -421,6 +433,7 @@ section.experience{
 }
 
 .experiencia__botao--repo{
+    cursor: pointer;
     padding: 8px;
     border: 1px var(--texto) solid;
     border-radius: 2px;
@@ -433,6 +446,7 @@ section.experience{
 }
 
 .experiencia__botao--repo:hover{
+    cursor: pointer;
     padding: 8px;
     font-family: var(--texto-normal);
     font-weight: bold;
@@ -444,6 +458,7 @@ section.experience{
 }
 
 .experience__botao--demo{
+    cursor: pointer;
     padding: 8px;
     font-family: var(--texto-normal);
     font-weight: bold;
@@ -455,6 +470,7 @@ section.experience{
     transition: 1s;
 }
 .experience__botao--demo:hover{
+    cursor: pointer;
     padding: 9px;
     font-family: var(--texto-normal);
     font-weight: bold;
@@ -546,6 +562,7 @@ section.formcontato{
 }
 
 .formcontato__botao{
+    cursor: pointer;
     width: 100%;
     height: 40px;
     border-radius: 6px;
@@ -558,6 +575,7 @@ section.formcontato{
     transition: 1s;
 }
 .formcontato__botao:hover{
+    cursor: pointer;
     font-family: var(--texto-normal);
     background: var(--titulo2);
     color: var(--titulo);
@@ -574,9 +592,6 @@ section.footer{
    color: var(--texto);
    font-family: var(--texto-titulo);
    flex-direction: column;
-}
-.menu-toggle,.cerrar-menu{
-    display: none;
 }
 
 /* @medias */
@@ -702,7 +717,9 @@ section.footer{
 .menu__header{
     display: none;
 }
-
+button{
+    cursor: pointer;
+}
 
 .menu__list__item{
     display: flex;
@@ -723,13 +740,14 @@ section.footer{
 .menu-toggle,.cerrar-menu{
     display: block;
     position: fixed;
+    cursor: pointer;
 }
 
 
 .nav {
     opacity: 0;
     visibility: hidden;
-
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -741,9 +759,10 @@ section.footer{
     background: var(--cor-de-fundo);
     padding: 15px;
     z-index: 2;
-    transition: left 0.3s ease; 
+    transition: 0.3s ease; 
 } 
 .nav.visible{
+    transition: 0.3s ease; 
     opacity: 1;
     visibility: visible;
 }
@@ -777,25 +796,11 @@ li.nv:hover {
     background: rgba(220, 220, 220, 0.158);
 }
 
-
 a {
     color: white;
     text-decoration: none;
 }
-/* .close {
-    background-color: red;
-    color: #e2e2e2;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: var(--texto);
-    border-radius: 50%;
-}
 
-.close:hover {
-    border: 1px solid white;
-    background-color: red;
-    color: var(--titulo); 
-} */
 /* fin menu */
   
 .title__div{
