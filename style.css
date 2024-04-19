@@ -75,7 +75,7 @@ section.menu{
     color: var(--color);
 }
 
-.menu__list__item:nth-child(4){
+.menu__list__item:nth-child(5){
     padding-right: 25px;
 }
 
@@ -730,7 +730,7 @@ button{
 .menu-toggle {
     display: flex;
     position: absolute;
-    top: 5vh;
+    top: 2vh;
     right: 10px;
     font-size: 24px;
     cursor: pointer;
@@ -746,8 +746,7 @@ button{
 .nav {
     opacity: 0;
     visibility: hidden;
-    display: flex;
-    position: fixed;
+  
     flex-direction: column;
     align-items: end;
     gap: 15px;
@@ -761,8 +760,9 @@ button{
     transition: 0.3s ease; 
 } 
 .nav.visible{
+    position: fixed;
     display: flex;
-    transition: 0.3s ease; 
+    transition: 0.5s ease; 
     opacity: 1;
     visibility: visible;
 }
@@ -776,7 +776,8 @@ button{
     padding-left: 0;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
+    margin: auto;
     gap: 20px;
     font-family: var(--texto-titulos);
 }
@@ -786,7 +787,7 @@ button{
 
 li.nv {
     margin:  5px auto 10px auto;
-    width: 85%;
+    width:95%;
     padding: 10px;
     border-radius: 3px;
     border: 1px solid gainsboro;
@@ -794,6 +795,9 @@ li.nv {
 li.nv:hover {
     border: 2px solid gainsboro;
     background: rgba(220, 220, 220, 0.158);
+}
+#close{
+     font-size: 24px;
 }
 
 
@@ -824,7 +828,10 @@ li.nv:hover {
      /* flex-direction: column; */
 }
 .nav-item{
-    font-size: 12px;
+    padding: 10px;
+}
+.nav-item:hover{
+    padding: 11px;
 }
 /*Skills*/
 .skills{
