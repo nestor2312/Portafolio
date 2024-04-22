@@ -934,18 +934,26 @@ section.footer {
     /*Titulo*/
     .title__bio {
         font-size: 23px;
+        text-align: center;
     }
 
     .title__container {
-        padding-left: 6px;
+        padding-left: 0px;
     }
 
     .title__subsection {
+        text-align: center;
         font-size: 18px;
     }
 
     /*Sección sobre mi*/
-
+    .about__title{
+       text-align: center;
+    }
+    .about__paragraph{
+        text-align: center;
+        max-width: 100%;
+    }
     /* redes */
     .title__network {
         padding-left: 0px;
