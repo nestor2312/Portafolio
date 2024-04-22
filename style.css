@@ -837,7 +837,10 @@ section.footer {
         z-index: 2;
     }
 
-    .menu-toggle,
+    .menu-toggle{
+        position: fixed;
+        cursor: pointer;
+    }
     #close {
         display: block;
         position: fixed;
@@ -859,7 +862,7 @@ section.footer {
         background: var(--cor-de-fundo);
         padding: 15px;
         z-index: 2;
-        transition: 0.3s ease;
+        transition: 1s ease;
     }
 
     .nav.visible {
@@ -918,7 +921,7 @@ section.footer {
         border: 2px solid gainsboro;
         background: rgba(220, 220, 220, 0.158);
     }
-
+  
     #close {
         font-size: 24px;
     }
@@ -928,7 +931,7 @@ section.footer {
 
     .title__div {
         flex-direction: column-reverse;
-        height: 320px;
+        height: 370px;
     }
 
     /*Titulo*/
