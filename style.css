@@ -509,12 +509,12 @@ section.experience {}
 .experiencia__botao--repo {
     cursor: pointer;
     padding: 8px;
-    border: 1px var(--texto) solid;
+    border: none;
     border-radius: 2px;
     font-family: var(--texto-normal);
-    background: var(--titulo2);
+    background: #454d59;
     color: var(--titulo);
-    border: 2px solid var(--texto);
+    border-bottom: 2px solid var(--texto);
     font-weight: bold;
     transition: 1s;
 }
@@ -524,7 +524,7 @@ section.experience {}
     padding: 8px;
     font-family: var(--texto-normal);
     font-weight: bold;
-    background: var(--color3);
+    background: #454d59;
     color: var(--texto);
     border: none;
     border-bottom: 2px solid #c8c8c8;
@@ -550,10 +550,9 @@ section.experience {}
     font-family: var(--texto-normal);
     font-weight: bold;
     background: var(--color3);
-    color: var(--titulo);
+    color: var(--texto);
     border: none;
     border-bottom: 2px solid var(--titulo);
-    ;
     transition: 1s;
 }
 
@@ -666,9 +665,9 @@ section.formcontato {
 .formcontato__botao:hover {
     cursor: pointer;
     font-family: var(--texto-normal);
-    background: var(--titulo2);
-    color: var(--titulo);
-    border: 2px solid var(--texto);
+    background: var(--color3);
+    border: none;
+    border-bottom: 3px solid var(--titulo);
 }
 
 /*footeer*/
