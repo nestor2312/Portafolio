@@ -49,13 +49,13 @@ li {
 .nav-item {
     text-decoration: none;
     color: var(--texto);
+    padding: 1px;
     font-family: var(--texto-menu);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .nav-item:hover {
     border-radius: 3px;
-    padding: 4px;
     border-bottom: 1px solid white;
     color: var(--texto);
 }
@@ -93,7 +93,7 @@ section.menu {
 }
 
 .menu__list__item:nth-child(5) {
-    padding-right: 25px;
+    padding-right: 45px;
 }
 
 .title__network {
@@ -129,13 +129,15 @@ section.title {
     font-style: normal;
 }
 span{
-    font-family: var(--front);
+    font-family: var(--texto-titulos);
     text-transform: uppercase;
-    color: #dc5836;
-    font-weight: 800;
-    font-weight: bold;
+    color: #FF8C00 ;
+    /* text-shadow: 1px 1px 1px #ffffffe0; */
+    font-weight: 300;
 }
-
+li i{
+    font-weight: 200px;
+}
 .title__subsection {
     line-height: 1.5;
     letter-spacing: 2px;
@@ -150,6 +152,7 @@ span{
 }
 
 .title__profile {
+    object-fit: cover;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -193,10 +196,9 @@ section.about {
 }
 
 .skills__title {
-    background: var(--titulo);
-    font-weight: 700;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--titulo);
+    font-weight: 600;
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,9 +338,9 @@ section.about {
     font-family: var(--texto-principal);
 }
 
-.skills__box:nth-child(7):hover i {
-    color: #7ad9f9;
-}
+.skills__box:nth-child(7):hover svg {
+    background-color: red; 
+  }
 
 .skills__box:nth-child(8):hover {
     border: 2px solid #fcfcfc;
@@ -377,10 +379,9 @@ section.about {
 }
 
 .academic__title {
-    background: var(--titulo);
-    font-weight: 700;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--titulo);
+    font-weight: 600;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,10 +397,8 @@ section.academic {
 }
 
 .academic__title {
-    background: var(--titulo);
-    font-weight: 700;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--titulo);
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -688,7 +687,7 @@ section.footer {
 
 @media (max-width: 1440px) {
     .formcontato__contacto {
-        width: 85%;
+        width: 90%;
     }
 
     .experience__img {
@@ -699,7 +698,7 @@ section.footer {
 
 @media (max-width: 1024px) {
     .formcontato__contacto {
-        width: 85%;
+        width: 90%;
     }
 
 }
