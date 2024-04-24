@@ -13,6 +13,13 @@
     /* --texto-principal:  "Wallpoet", sans-serif; */
     --texto-menu: "Orbitron", sans-serif;
 }
+@font-face {
+    font-family: 'Stoked';
+    src: url('../assets/fuentes/stoked.woff') format('woff2'), /* Modern browsers */
+         url('../assets/fuentes/stoked.woff') format('woff'); /* Older browsers */
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
     scroll-behavior: smooth;
