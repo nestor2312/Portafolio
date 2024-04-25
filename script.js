@@ -13,11 +13,11 @@ let imgResponsive = document.getElementById('responsive');
 let imgUX = document.getElementById('ux');
 
 imgUX.addEventListener('mouseenter', () => {
-    imgUX.setAttribute("src", "../assets/uxColor.svg");
+    imgUX.setAttribute("src", "./assets/uxColor.svg");
 });
 
 imgUX.addEventListener('mouseleave', () => {
-    imgUX.setAttribute("src", "../assets/ux.svg");
+    imgUX.setAttribute("src", "./assets/ux.svg");
 });
 
 imgResponsive.addEventListener('mouseenter', () => {
