@@ -12,12 +12,20 @@ let imgResponsive = document.getElementById('responsive');
 
 let imgUX = document.getElementById('ux');
 
-imgUX.addEventListener('click', () => {
-    imgUX.setAttribute("src", "../assets/uxCOlor.svg");
+imgUX.addEventListener('mouseenter', () => {
+    imgUX.setAttribute("src", "../assets/uxColor.svg");
 });
 
-imgResponsive.addEventListener('click', () => {
-    imgResponsive.setAttribute("src", "../assets/responsiveCOlor.svg");
+imgUX.addEventListener('mouseleave', () => {
+    imgUX.setAttribute("src", "../assets/ux.svg");
+});
+
+imgResponsive.addEventListener('mouseenter', () => {
+    imgResponsive.setAttribute("src", "./assets/responsiveColor.svg");
+});
+
+imgResponsive.addEventListener('mouseleave', () => {
+    imgResponsive.setAttribute("src", "./assets/responsive.svg");
 });
 
 menuToggle.addEventListener('click', () => {
