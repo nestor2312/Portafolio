@@ -7,7 +7,7 @@
     --color: linear-gradient(180deg, #4ee89ea4 20%, #09537e 100%);
     --color3: #02223f;
    
-    --texto-titulos:'Stoked', sans-serif;
+    /* --texto-titulos:'Stoked', sans-serif; */
     --front:'Orbitron', sans-serif;
     --texto-normal: "poppins", sans-serif;
     /* --texto-principal:  "Wallpoet", sans-serif; */
@@ -15,8 +15,8 @@
 }
 @font-face {
     font-family: 'Stoked';
-    src: url('../assets/fuentes/stoked.woff') format('woff2'), /* Modern browsers */
-         url('../assets/fuentes/stoked.woff') format('woff'); /* Older browsers */
+    src: url('./assets/fuentes/stoked.woff') format('woff2'), 
+         url('./assets/fuentes/stoked.woff') format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -136,7 +136,7 @@ section.title {
     font-style: normal;
 }
 span{
-    font-family: var(--texto-titulos);
+    font-family: 'Stoked', sans-serif;
     text-transform: uppercase;
     color: #FF8C00 ;
     /* text-shadow: 1px 1px 1px #ffffffe0; */
