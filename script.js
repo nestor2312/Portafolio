@@ -7,6 +7,19 @@ let Skills = document.getElementById('Skills');
 let Formación = document.getElementById('Formación');
 let Proyectos = document.getElementById('Proyectos');
 
+
+let imgResponsive = document.getElementById('responsive');
+
+let imgUX = document.getElementById('ux');
+
+imgUX.addEventListener('click', () => {
+    imgUX.setAttribute("src", "../assets/uxCOlor.svg");
+});
+
+imgResponsive.addEventListener('click', () => {
+    imgResponsive.setAttribute("src", "../assets/responsiveCOlor.svg");
+});
+
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('visible');
 });
