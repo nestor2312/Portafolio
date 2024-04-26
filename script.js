@@ -7,26 +7,37 @@ let Skills = document.getElementById('Skills');
 let Formación = document.getElementById('Formación');
 let Proyectos = document.getElementById('Proyectos');
 
+let skillsBox = document.querySelectorAll('.skills__box');
 
-let imgResponsive = document.getElementById('responsive');
+if (skillsBox.length > 7) {
+  
+    let SkillsBox7 = skillsBox[6];
+    let imgResponsive7 = SkillsBox7.querySelector('#responsive');
 
-let imgUX = document.getElementById('ux');
+    // octavo elemento 
+    let SkillsBox8 = skillsBox[7];
+    let imgUX8 = SkillsBox8.querySelector('#ux');
 
-imgUX.addEventListener('mouseenter', () => {
-    imgUX.setAttribute("src", "./assets/uxColor.svg");
-});
+    // eventos septimo elemento
+    SkillsBox7.addEventListener('mouseenter', () => {
+        if (imgResponsive7) imgResponsive7.setAttribute("src", "./assets/responsiveColor.svg");
+    });
+    SkillsBox7.addEventListener('mouseleave', () => {
+        if (imgResponsive7) imgResponsive7.setAttribute("src", "./assets/responsive.svg");
+    });
 
-imgUX.addEventListener('mouseleave', () => {
-    imgUX.setAttribute("src", "./assets/ux.svg");
-});
+    // Eventos octavo elemento
+    SkillsBox8.addEventListener('mouseenter', () => {
+        if (imgUX8) imgUX8.setAttribute("src", "./assets/uxColor.svg");
+      
+    });
+    SkillsBox8.addEventListener('mouseleave', () => {
+        if (imgUX8) imgUX8.setAttribute("src", "./assets/ux.svg");
+    });
 
-imgResponsive.addEventListener('mouseenter', () => {
-    imgResponsive.setAttribute("src", "./assets/responsiveColor.svg");
-});
-
-imgResponsive.addEventListener('mouseleave', () => {
-    imgResponsive.setAttribute("src", "./assets/responsive.svg");
-});
+} else {
+    console.log("No hay suficientes elementos");
+}
 
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('visible');
